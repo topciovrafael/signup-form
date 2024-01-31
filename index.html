@@ -28,47 +28,52 @@
                 </div>
         </div>
         <div class="parte" id="dreapta">
-            <div class="textinainte" id="unu">This is not a real website. Sign up below so you can be sure you won't get nothing at no time!</div>
-            <div class="textinainte" id="doi">Coolest form you've ever seen!</div>
+            <div class="textinainte" id="unu">This is not a real website. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="textinainte" id="doi">Sign-Up below!</div>
     
             <div class="forma">
                 <form>
 
-                    <label for="firstname">First name:</label>
+                
                     <input type="text" name="firstname" id="" placeholder="First name" minlength="2" maxlength="20" pattern="[A-Za-z' ]{1,20}"
                     oninvalid="this.setCustomValidity('You are allowed to use only letters here.')"
                     oninput="this.setCustomValidity('')" 
                     required>
-                    <label for="lastname">Last name:</label>
+                    <label for="firstname">First name</label>
+                
                     <input type="text" name="lastname" id="" placeholder="Last name" minlength="2" maxlength="20" pattern="[A-Za-z' ]{1,20}" 
                     oninvalid="this.setCustomValidity('You are allowed to use only letters here.')"
                     oninput="this.setCustomValidity('')"
                     required>
-                    <label for="email">E-mail:</label>
+                    <label for="lastname">Last name</label>
+                    
                     <input type="email" name="email" id="" placeholder="E-mail" 
                     oninvalid="this.setCustomValidity('Hey, you are missing the domain part in your email! Example: John_Watkins@domain.com')"
                     oninput="this.setCustomValidity('')"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
                     />
-
-                    <label for="nr">Phone number:</label>
+                    <label for="email">E-mail</label>
+                    
                     <input type="text" name="nr" id="" placeholder="Phone number" pattern="[+40][0-9]{11}" 
                     oninvalid="this.setCustomValidity('Hey, your phone number does not respect the Romanian country code. Example: +40728440737')"
                     oninput="this.setCustomValidity('')" required>
-                    <label for="pw">Password:</label>
+                    <label for="nr">Phone number</label>
+                    
                     <input type="password" name="pw" onkeyup="validate_password()" onfocus="afisare()"  id="pass" placeholder="Password" minlength="8" maxlength="21" required>
-                    <label for="pw2">Confirm password:</label>
-                    <input type="password" onkeyup="validate_password()" onfocus="afisare()"  name="pw2" id="repass" minlength="8" maxlength="21" placeholder="Confirm password" required>
-                    <div id="missmatch"> </div>
+                    <label for="pw">Password</label>
+                    
 
-                    <button id="btn" >Submit</button>
+                    <input type="password" onkeyup="validate_password()" onfocus="afisare()"  name="pw2" id="repass" minlength="8" maxlength="21" placeholder="Confirm password" required>
+                    <label for="pw2">Confirm password</label>
+                    <div id="missmatch"> </div>
+                    <button id="btn">Submit</button>
                 </form>
 
                 <div id="passreq">
-                    <div class="req" id="req1">⌧ Password length 8-20</div>
-                    <div class="req" id="req2">⌧ At least one number</div>
-                    <div class="req" id="req3">⌧ At least one big letter</div>
-                    <div class="req" id="req4">⌧ At least one special character</div>
-                    <div class="req" id="req5">⌧ At least one small character</div>
+                    <div class="req" id="req1">✘ Password length 8-20</div>
+                    <div class="req" id="req2">✘ At least one number</div>
+                    <div class="req" id="req3">✘ At least one big letter</div>
+                    <div class="req" id="req4">✘ At least one special character</div>
+                    <div class="req" id="req5">✘ At least one small character</div>
                 </div>
 
 

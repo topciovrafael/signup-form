@@ -19,12 +19,12 @@ function validarelungime(){
     let pass = document.getElementById('pass').value;
     if(pass.length<8 || pass.length>20){
         document.getElementById("req1").style.color="red";
-        document.getElementById("req1").innerHTML= "⌧ Password length 8-20"
+        document.getElementById("req1").innerHTML= "✘ Password length 8-20"
         return false;
     }
     else{
         document.getElementById("req1").style.color="green";
-        document.getElementById("req1").innerHTML= "🗹 Password length 8-20"
+        document.getElementById("req1").innerHTML= "✔ Password length 8-20"
         return true;
     }
 }
@@ -33,12 +33,12 @@ function validareNr(){
     let pass = document.getElementById('pass').value;
     if(/\d/.test(pass)){
         document.getElementById("req2").style.color="green";
-        document.getElementById("req2").innerHTML= "🗹 At least one number"
+        document.getElementById("req2").innerHTML= "✔ At least one number"
         return true;
     }
     else{
         document.getElementById("req2").style.color="red";
-        document.getElementById("req2").innerHTML= "⌧ At least one number"
+        document.getElementById("req2").innerHTML= "✘ At least one number"
         return false;
     }
 }
@@ -47,12 +47,12 @@ function validareCapital(){
     let pass = document.getElementById('pass').value;
     if(Boolean(pass.match(/[A-Z]/))){
         document.getElementById("req3").style.color="green";
-        document.getElementById("req3").innerHTML= "🗹 At least one big letter"
+        document.getElementById("req3").innerHTML= "✔ At least one big letter"
         return true;
     }
     else{
         document.getElementById("req3").style.color="red";
-        document.getElementById("req3").innerHTML= "⌧ At least one big letter"
+        document.getElementById("req3").innerHTML= "✘ At least one big letter"
         return false;
     }
 }
@@ -62,12 +62,12 @@ function validareSpecial(){
     let pass = document.getElementById('pass').value;
     if(specialChars.test(pass)){
         document.getElementById("req4").style.color="green";
-        document.getElementById("req4").innerHTML= "🗹 At least one special character"
+        document.getElementById("req4").innerHTML= "✔ At least one special character"
         return true;
     }
     else{
         document.getElementById("req4").style.color="red";
-        document.getElementById("req4").innerHTML= "⌧ At least one special character"
+        document.getElementById("req4").innerHTML= "✘ At least one special character"
         return false;
     }
 }
@@ -76,12 +76,12 @@ function validareLitMica(){
     let pass = document.getElementById('pass').value;
     if(Boolean(pass.match(/[a-z]/))){
         document.getElementById("req5").style.color="green";
-        document.getElementById("req5").innerHTML= "🗹 At least one small character"
+        document.getElementById("req5").innerHTML= "✔ At least one small character"
         return true;
     }
     else{
         document.getElementById("req5").style.color="red";
-        document.getElementById("req5").innerHTML= "⌧ At least one small character"
+        document.getElementById("req5").innerHTML= "✘ At least one small character"
         return false;
     }
 }
@@ -99,14 +99,14 @@ function validate_password() {
     if (pass != confirm_pass) {
         document.getElementById('missmatch').style.color = 'red';
         document.getElementById('missmatch').style.height="20px";
-        document.getElementById('missmatch').innerHTML = "⌧ Passwords don't match";
+        document.getElementById('missmatch').innerHTML = "✘ Passwords don't match";
         document.getElementById('btn').disabled = true;
         document.getElementById('btn').style.marginTop="25px";
         document.getElementById('btn').style.marginTop=(5);
     } else {
         document.getElementById('missmatch').style.color = 'green';
         document.getElementById('missmatch').style.height="20px";
-        document.getElementById('missmatch').innerHTML = '🗹 Passwords match';
+        document.getElementById('missmatch').innerHTML = '✔ Passwords match';
         //document.getElementById('btn').disabled = false;
         adv=1;
         document.getElementById('btn').style.marginTop="25px";
